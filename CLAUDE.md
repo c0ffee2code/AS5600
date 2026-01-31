@@ -10,23 +10,18 @@ AS5600 is a MicroPython driver for the AS5600 magnetic rotary encoder sensor, de
 
 **Primary use case**: Reference sensor for flight control systems
 
-**Priority 1 - Lowest Sensor Lag**:
+**Priority 1 - Lowest Sensor Lag** ✓ Achieved:
 - Use fastest filter settings (SF=11 gives 0.286ms settling time)
 - Enable fast filter (FTH bits) for quick step response
 - Use NOM power mode (PM=00, always on) - no polling delays
 
-**Priority 2 - Moderate to High Angular Precision**:
+**Priority 2 - Moderate to High Angular Precision** ✓ Achieved:
 - 12-bit resolution provides ~0.088° per step
 - Proper handling of 0/360° wrap-around boundary for PID loops (implemented in `wrap_error()`)
 
-**Side Goal - Noise Exploration**:
+**Side Goal - Noise Exploration** ✓ Achieved:
 - Characterize noise at different filter settings (SF=11: 0.043° RMS, SF=00: 0.015° RMS)
 - Trade-off analysis between latency and noise
-
-**Future Milestones**:
-- Restrict angular range to 180° for tilt applications (mechanical system doesn't allow full revolution)
-- Range restriction uses ZPOS/MPOS registers or MANG register (min 18°)
-- Configurable center point (currently set in client code, e.g., `AXIS_CENTER = 422`)
 
 ## Architecture
 
