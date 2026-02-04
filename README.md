@@ -1,6 +1,6 @@
 # AS5600 MicroPython Driver
 
-A minimalistic MicroPython driver for the AS5600 12-bit magnetic rotary position sensor, designed for low-latency angle reading in flight control applications.
+A minimalistic MicroPython driver for the AS5600 12-bit magnetic rotary position sensor, designed for low-latency angle reading for my test bench composed of sensors, Raspberry Pi Pico 2, wires and other stuff.
 
 ## Features
 
