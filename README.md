@@ -208,4 +208,4 @@ print(f"Center position: {encoder.read_raw_angle()}")
 
 ## License
 
-MIT
+GPL-3.0
