@@ -26,7 +26,7 @@ encoder.configure_low_latency_mode()
 
 # Mechanical center point - recalibrate after reassembly!
 # Recorded while holding lever at horizontal position
-AXIS_CENTER = const(413)
+AXIS_CENTER = const(275)
 
 # Main monitoring loop
 while True:
